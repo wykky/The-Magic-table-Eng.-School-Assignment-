@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assignment2.css" />
+    <title>Magic Table</title>
+  </head>
+  <center>
+    <body>
+      <header>The Magic Table</header>
+      <br />
+      <div class="selection">
+        <form id="form">
+          <label for="column">Number of Columns</label>
+          <input
+            id="col"
+            type="number"
+            min="1"
+            max="15"
+            oninput="validity.valid||(value='');"
+            required
+          />
+          <br />
+          <label for="row">Number of Rows</label>
+          <input
+            id="row"
+            type="number"
+            min="1"
+            max="15"
+            oninput="validity.valid||(value='');"
+            required
+          />
+          <br />
+          <br />
+          <button type="submit">Generate</button>
+          <button type="reset">Clear</button>
+        </form>
+      </div>
+      <br />
+      <div>
+        <table id="tab" border="1"></table>
+      </div>
+      <br />
+    </body>
+  </center>
+  <script src="Assignment2.js"></script>
+
+  <footer>
+    &copy;&nbsp;Copyright Wielfrid Nguessan - Student # 301179650 - Assignment 2
+    <div class="go" id="Foo">GO BROOKLYN NETS!!</div>
+  </footer>
+</html>
